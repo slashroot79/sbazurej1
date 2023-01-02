@@ -11,7 +11,7 @@ public class OutController {
 	
 	@GetMapping("")
 	public String out() {
-		return "Tabled";
+		return "Now tabled";
 	}
 
 }
