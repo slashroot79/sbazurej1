@@ -13,13 +13,13 @@ public class HelloController {
 	@Value("${HOSTNAME:winbox}")
 	private String machineName;
 	
-	@GetMapping("/")
-	public String hello() {
+	@GetMapping("/test")
+	public String test() {
 		return "Hello there!";
 	}
 	
-	@GetMapping("/details")
-	public String details() {
+	@GetMapping("/")
+	public String hello() {
 		return String.format("Hello from %s running on instance %s", this.sitename,this.machineName);
 	}
 }
